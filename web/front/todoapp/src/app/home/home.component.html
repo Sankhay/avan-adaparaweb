@@ -1,0 +1,7 @@
+<input id="newNotes">
+<button (click)="addNotes()">Add Notes</button>
+
+<h3 *ngFor="let note of notes; let i = index">
+  <b>* {{notes[i].description}}</b>
+  <button (click)="deleteNotes(notes.id)">Delete Notes</button>
+</h3>
